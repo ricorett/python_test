@@ -1,0 +1,4 @@
+Boris 7
+Albina 3
+Ivan 16
+Petr 18
