@@ -2,7 +2,7 @@ FREE_BUN = 5
 clients_count = 0
 clients = []
 
-with open('client.txt', 'r') as file:
+with open('client.txt', 'r', encoding='utf-8') as file:
     for line in file:
         clients.append(line.rstrip())
         clients_count += 1
