@@ -29,9 +29,11 @@ def test_error():
         concatenation(1, "Hello")
 
 
-def test_not_eq():
+def test_not_eq(str1, str2):
     assert concatenation("Hello", "World") != "Hello World"
 
+def test_ngt_1():
+    assert concatenation("A", "") < "a"
 @pytest.mark.xfail(reason='Намеренный провал')
 def test_fail():
     assert False
