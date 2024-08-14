@@ -12,25 +12,13 @@ def test_param(str1, str2, expected):
     assert concatenation(str1, str2) == expected
 
 
-def test_sum_1():
-    assert concatenation("Hello", "World") == "HelloWorld"
-
-
-def test_sum_2():
-    assert concatenation('', '') == ''
-
-
-def test_sum_3():
-    assert concatenation("", "For the Horde!") == "For the Horde!"
-
-
 def test_error():
     with pytest.raises(TypeError, match="Both arguments must be strings"):
         concatenation(1, "Hello")
 
 
-def test_not_eq(str1, str2):
-    assert concatenation("Hello", "World") != "Hello World"
+def test_not_eq():
+    assert concatenation("Hello", "World") != "hello world"
 
 
 def test_ngt_1():
